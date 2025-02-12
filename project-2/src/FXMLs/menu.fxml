@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="750.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/menu.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="MyPlayers" layoutX="270.0" layoutY="126.0" mnemonicParsing="false" onAction="#MyPlayersPressed" text="My Players">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47999996609157985" centerY="0.5" radius="0.37906974969908247">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.015789473429322243" green="0.015789473429322243" blue="0.015789473429322243" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2544736862182617" green="0.4736842215061188" blue="0.08684210479259491" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="BuyPlayers" layoutX="265.0" layoutY="348.0" mnemonicParsing="false" onAction="#BuyPlayersPressed" text="Buy Players">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47999996609157985" centerY="0.5" radius="0.37906974969908247">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3018924593925476" green="0.5789473652839661" blue="0.10399609804153442" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="exit" layoutX="571.0" layoutY="439.0" mnemonicParsing="false" onAction="#ExitPressed" text="Exit">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47999996609157985" centerY="0.5" radius="0.37906974969908247">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3018924593925476" green="0.5789473652839661" blue="0.10399609804153442" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="SearchPlayers" layoutX="55.0" layoutY="242.0" mnemonicParsing="false" onAction="#SearchPlayersPressed" prefHeight="75.0" prefWidth="309.0" text="Search Players">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47999996609157985" centerY="0.5" radius="0.37906974969908247">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3018924593925476" green="0.5789473652839661" blue="0.10399609804153442" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="SearchClubs" layoutX="402.0" layoutY="238.0" mnemonicParsing="false" onAction="#SearchClubsPressed" text="Search Clubs">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47999996609157985" centerY="0.5" radius="0.37906974969908247">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3018924593925476" green="0.5789473652839661" blue="0.10399609804153442" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="LogOut" layoutX="551.0" layoutY="26.0" mnemonicParsing="false" onAction="#LogOutPressed" style="-fx-background-color: green;" text="Log Out" textFill="#f6f6f3">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <Reflection />
+               </input>
+            </InnerShadow>
+         </effect></Button>
+      <ImageView fx:id="img" fitHeight="130.0" fitWidth="165.0" layoutX="51.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

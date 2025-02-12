@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyPlayerController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="900.0" layoutY="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/bgMyplayer.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scroll" layoutX="37.0" layoutY="110.0" prefHeight="574.0" prefWidth="833.0">
+         <content>
+            <GridPane fx:id="grid">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Text layoutX="266.0" layoutY="79.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.0" text="Player Inventory">
+         <font>
+            <Font name="Californian FB Bold" size="52.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-0.316279034281886" radius="0.5558139446169831">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.871319055557251" blue="0.19220273196697235" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <AnchorPane layoutX="10.0" layoutY="94.0" />
+      <Button fx:id="BackButton" layoutX="831.0" layoutY="30.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="37.0" prefWidth="41.0">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <RadioButton fx:id="sell" layoutX="60.0" layoutY="40.0" mnemonicParsing="false" onAction="#sellPressed" text="SELL">
+         <font>
+            <Font name="Corbel Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7180951799665178" endY="0.7009523664202009">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.019405458122491837" green="0.7504326105117798" blue="0.9526315927505493" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9195029139518738" green="0.9285599589347839" blue="0.9315789341926575" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </RadioButton>
+   </children>
+</AnchorPane>
